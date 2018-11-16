@@ -1,0 +1,38 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jiggle-version = "*"
+pandoc = "*"
+vulture = "*"
+sphinx = "*"
+bandit = "*"
+black = "*"
+pip-check = "*"
+pytest-sugar = "*"
+pytest-cov = "*"
+check-manifest = "*"
+prospector = {extras = ["with-everything"],version = "*"}
+mypy = "*"
+detect-secrets = "*"
+pipenv-to-requirements = "*"
+mccabe = "*"
+pycycle = "*"
+radon = "*"
+python-taint = "*"
+nose = "*"
+coveralls = "*"
+twine = "*"
+pylint = "==1.9.2"
+sphinx-rtd-theme = "*"
+
+[packages]
+pynt = "*"
+pynt-contrib = "*"
+semantic-version = "*"
+jiggle-version = "*"
+
+[requires]
+python_version = "3.6"

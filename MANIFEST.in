@@ -1,0 +1,13 @@
+include *.lock
+include *.md
+include *.py
+include *.sh
+include *.txt
+include *.yml
+include AUTHORS
+include ChangeLog
+include LICENSE
+include Pipfile
+include pylintrc.ini
+prune docs
+prune
