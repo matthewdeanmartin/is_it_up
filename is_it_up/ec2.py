@@ -1,17 +1,15 @@
-# coding=utf-8
 """
-Quickly decide if NLP server is up or not.
+EC2 machine checker based on RemoteMachineChecker class
 """
-from is_it_up.base import IsItUpBase
-from timeit import default_timer as timer
-
 import socket
-from typing import Dict, Union, Optional
+from typing import Dict, Optional, Union
+
+from is_it_up.base import RemoteMachineChecker
 
 _ = Dict, Union, Optional
 
 
-class EC2Checker(IsItUpBase):
+class EC2Checker(RemoteMachineChecker):
     def __init__(self, host: str, port: Union[str, int]):
         super(EC2Checker, self).__init__()
         return self.ping_nlp(host, int(port))[host] is not None
