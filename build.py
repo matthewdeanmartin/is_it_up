@@ -373,7 +373,7 @@ def check_setup_py():
             execute(*("{0} {1} setup.py check -r -s".format(PIPENV, PYTHON).strip().split(" ")))
 
 
-@task(dead_code, check_setup_py, compile_md, compile_py, mypy, lint, nose_tests, docs, jiggle_version, detect_secrets)
+@task(pin_dependencies, dead_code, check_setup_py, compile_md, compile_py, mypy, lint, nose_tests, docs, jiggle_version, detect_secrets)
 @skip_if_no_change("package")
 @timed()
 def package():
