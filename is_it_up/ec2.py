@@ -4,7 +4,7 @@ EC2 machine checker based on RemoteMachineChecker class
 import socket
 from typing import Dict, Optional, Union
 
-from is_it_up.base import RemoteMachineChecker
+from is_it_up import RemoteMachineChecker
 
 _ = Dict, Union, Optional
 

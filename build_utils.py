@@ -15,7 +15,7 @@ from semantic_version import Version
 PROJECT_NAME = "is_it_up"
 PIPENV = "pipenv run"
 SRC = '.'
-PYTHON = "python3.6"
+PYTHON = "python3.7"
 IS_DJANGO = False
 IS_TRAVIS = 'TRAVIS' in os.environ # I double we will ever use travis...
 if IS_TRAVIS:

@@ -1,5 +1,5 @@
 # coding=utf-8
-import is_it_up.simple_ping
+from is_it_up import RedisChecker, RemoteMachineChecker, DatabaseChecker, EC2Checker
 
 def test():
-    is_it_up.simple_ping.quick_check("localhost",80)
+    pass

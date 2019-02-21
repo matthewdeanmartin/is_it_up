@@ -6,13 +6,9 @@ from typing import Optional, Dict
 
 
 class IsItUpBase(object):
-    def __init__(
-        self, host: str, options: Optional[Dict[str,str]] = None
-    ) -> None:
+    def __init__(self, host: str, options: Optional[Dict[str, str]] = None) -> None:
 
-        self._state = {
-            "available": False
-        }
+        self._state = {"available": False}
         self._hostname = None
         self._ipaddr = None
 
@@ -32,11 +28,9 @@ class IsItUpBase(object):
         except Exception:
             return None
 
-    def __get_hostname(self, ipaddr: str) -> Optional[str:
+    def __get_hostname(self, ipaddr: str) -> Optional[str]:
         try:
             hostname = socket.gethostbyaddr(ipaddr)[0]
             return hostname
         except Exception:
             return None
-
-

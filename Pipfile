@@ -27,6 +27,7 @@ coveralls = "*"
 twine = "*"
 pylint = "==1.9.2"
 sphinx-rtd-theme = "*"
+checksumdir = "*"
 
 [packages]
 pynt = "*"

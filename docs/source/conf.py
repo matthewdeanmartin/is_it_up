@@ -26,8 +26,8 @@ import is_it_up
 # -- Project information -----------------------------------------------------
 
 project = 'is_it_up'
-copyright = '2018, Matthew Martin'
-author = 'Matthew Martin'
+copyright = '2019, Matthew Martin'
+author = 'Matthew Martin, Vladimir Loskutov'
 
 # The short X.Y version.
 version = is_it_up.__version__
