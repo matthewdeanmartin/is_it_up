@@ -3,11 +3,14 @@ branches:
   - master
 
 language: python
+dist: xenial
+sudo: true
 addons:
   apt_packages:
     - pandoc
 python:
   - "3.6"
+  - "3.7"
 cache: pip
 # command to install dependencies
 install:
