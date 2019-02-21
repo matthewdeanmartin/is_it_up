@@ -36,6 +36,14 @@ is\_it\_up.remote\_machine module
     :undoc-members:
     :show-inheritance:
 
+is\_it\_up.elasticache module
+----------------------------------------
+
+.. automodule:: is_it_up.elasticache
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 is\_it\_up.is\_it\_up module
 ----------------------------------------
 

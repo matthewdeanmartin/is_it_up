@@ -66,7 +66,7 @@ setup(
     long_description=long_description,
     # markdown is not supported. Easier to just convert md to rst with pandoc
     # long_description_content_type='text/markdown',
-    author='Matthew Martin',
+    author='Matthew Martin, Vladimir Loskutov',
     author_email='matthewdeanmartin@gmail.com',
     url='https://github.com/matthewdeanmartin/' + PROJECT_NAME,
     packages=find_packages(exclude=['test']),

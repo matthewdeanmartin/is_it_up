@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 EC2 machine checker based on RemoteMachineChecker class
 """

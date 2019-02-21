@@ -1,17 +1,17 @@
 # coding=utf-8
 """
-Checking remote machine
+Elasticache health check using cloudwatch metrics
 """
 
 import socket
 from typing import Dict, Optional, Union
 
-from is_it_up.base import IsItUpBase
+from is_it_up import RedisChecker
 
 _ = Dict, Union, Optional
 
 
-class RemoteMachineChecker(IsItUpBase):
+class ElastiCacheChecker(RedisChecker):
     def __init__(self, host: str, port: Union[str, int]):
-        super(RemoteMachineChecker, self).__init__()
+        super(EC2Checker, self).__init__()
         pass
