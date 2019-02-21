@@ -72,7 +72,7 @@ setup(
     packages=find_packages(exclude=['test']),
     entry_points={
         'console_scripts': [
-            # 'pipenv=pipenv:cli',
+            'is_it_up=is_it_up.is_it_up:is_it_up',
         ]
     },
     install_requires=[

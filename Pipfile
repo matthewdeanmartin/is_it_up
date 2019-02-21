@@ -35,6 +35,7 @@ pynt-contrib = "*"
 semantic-version = "*"
 jiggle-version = "*"
 docopt = "*"
+is-it-up = {editable = true,path = "."}
 
 [requires]
 python_version = "3.7"

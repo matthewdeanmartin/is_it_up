@@ -29,9 +29,8 @@ from is_it_up import (
 
 
 def is_it_up(*args, **kwargs):
-    pass
-
+    arguments = docopt.docopt(__doc__, version="Is_it_up {0}".format(version))
+    print(arguments)
 
 if __name__ == "__main__":
-    arguments = docopt(__doc__, version="Is_it_up {0}".format(version))
     is_it_up()
