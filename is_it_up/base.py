@@ -6,7 +6,7 @@ import os
 import socket
 import subprocess
 from typing import Optional, Dict, List
-from is_it_up import IsItUpException
+from is_it_up.exceptions import IsItUpException
 
 _ = Optional, Dict, List
 
@@ -19,11 +19,11 @@ class IsItUpBase(object):
         timeout: Optional[float] = None,
     ) -> None:
 
-        self._state = {"available": False}
+        self._state = {"available": False, "host": host}
         self._hostname = None
         self._ipaddr = None
 
-    def __resolve_dns_or_ip(self, host: str) -> None:
+    def _resolve_dns_or_ip(self, host: str) -> None:
         try:
             result = socket.inet_aton(host)
             self._ipaddr = host
@@ -46,19 +46,19 @@ class IsItUpBase(object):
         except Exception:
             return None
 
-    def __ping(self, host: str, times: int = 1, timeout: int = 2000) -> None:
+    def _ping(self, host: str, times: int = 1, timeout: int = 2000) -> None:
         if os.name == "posix":
             cmd = f"ping -c {times} -W {timeout} {host}"
         elif os.name in ("nt", "dos", "ce"):
             cmd = f"ping -n {times} -w {timeout} {host}"
 
-        result = subprocess.call(cmd, shell=True)
+        result = subprocess.call(cmd, stdout=subprocess.DEVNULL, shell=True)
         if result == 0:
             self._state["ping"] = True
         else:
             self._state["ping"] = False
 
-    def __scan_ports(self, host: str, ports: List[str], timeout: float = 1.0) -> None:
+    def _scan_ports(self, host: str, ports: List[str], timeout: float = 1.0) -> None:
         int_ports = []
 
         for i in ports:

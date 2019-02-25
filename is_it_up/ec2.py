@@ -5,7 +5,7 @@ EC2 machine checker based on RemoteMachineChecker class
 import socket
 from typing import Dict, Optional, Union
 
-from is_it_up import RemoteMachineChecker
+from is_it_up.remote_machine import RemoteMachineChecker
 
 _ = Dict, Union, Optional
 

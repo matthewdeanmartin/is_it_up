@@ -6,7 +6,7 @@ Elasticache health check using cloudwatch metrics
 import socket
 from typing import Dict, Optional, Union
 
-from is_it_up import RedisChecker
+from is_it_up.redis import RedisChecker
 
 _ = Dict, Union, Optional
 
