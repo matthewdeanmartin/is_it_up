@@ -28,12 +28,13 @@ twine = "*"
 pylint = "==1.9.2"
 sphinx-rtd-theme = "*"
 checksumdir = "*"
-
-[packages]
 pynt = "*"
 pynt-contrib = "*"
 semantic-version = "*"
-jiggle-version = "*"
+
+[packages]
+boto3 = "*"
+pyyaml = ">=4.2b1"
 docopt = "*"
 is-it-up = {editable = true,path = "."}
 

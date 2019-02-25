@@ -7,6 +7,7 @@ from is_it_up.remote_machine import *
 from is_it_up.ec2 import *
 from is_it_up.redis import *
 from is_it_up.elasticache import *
+from is_it_up.exceptions import *
 
 import is_it_up.__version__ as version
 

@@ -72,7 +72,7 @@ setup(
     packages=find_packages(exclude=['test']),
     entry_points={
         'console_scripts': [
-            'is_it_up=is_it_up.is_it_up:is_it_up',
+            'is_it_up=is_it_up.core:entry',
         ]
     },
     install_requires=[
